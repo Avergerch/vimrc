@@ -44,16 +44,6 @@ endif
 
 
 
-"""ConEmu设置
-if has('win32') && !has('gui_running') && !empty($CONEMUBUILD)
-        set term=xterm
-        set t_Co=256
-        let &t_AB="\e[48;5;%dm"
-        let &t_AF="\e[38;5;%dm"
-endif
-
-
-
 """插件设置
 "Vundle启用
         set rtp+=~/.vim/bundle/vundle/
