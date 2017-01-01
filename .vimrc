@@ -25,8 +25,8 @@
 "启用状态栏
         set ruler
 "设置主题
-        colorscheme solarized
-        set background=dark
+        set t_Co=256
+        colorscheme molokai
 "标签页快捷键
         nnoremap <C-h> :tabp<CR>
         nnoremap <C-l> :tabn<CR>
@@ -42,22 +42,19 @@ if has('gui_running')
         set guifont=Source\ Code\ Pro\ 12
 endif
 
-
-
 """插件设置
 "Vundle启用
         set rtp+=~/.vim/bundle/vundle/
         call vundle#rc()
 "插件更新列表
         Bundle 'gmarik/vundle'
-        Bundle 'altercation/vim-colors-solarized'
         Bundle 'scrooloose/nerdtree' 
         Bundle 'ervandew/supertab'
         Bundle 'vim-scripts/a.vim'
         Bundle 'plasticboy/vim-markdown'
 "NERDTree文件管理
         nnoremap <F2> :NERDTreeToggle<CR>
-"SuperTab
+"SuperTab简单补全
         let g:SuperTabDefaultCompletionType="context"
 "a.vim
         nnoremap <silent> <F10> :A<CR>
